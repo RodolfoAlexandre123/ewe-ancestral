@@ -1,20 +1,16 @@
-/* ==========================================
-   MENU MOBILE (HAMBURGUER)
-   ========================================== */
+
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
     
     burger.addEventListener('click', () => {
-        // Toggle Nav
+        
         nav.classList.toggle('nav-active');
         
-        // Burger Animation
         burger.classList.toggle('toggle');
     });
     
-    // Fechar menu ao clicar em um link
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             nav.classList.remove('nav-active');
@@ -23,28 +19,19 @@ const navSlide = () => {
     });
 }
 
-/* ==========================================
-   BOTÃO DE COMPRAR - WHATSAPP
-   ========================================== */
+
 function comprarWhatsApp(produto) {
-    // Número do WhatsApp (formato internacional sem +)
     const numero = '5511972852147';
     
-    // Mensagem personalizada
     const mensagem = `Olá! Tenho interesse em comprar: *${produto}*\n\nGostaria de mais informações sobre pagamento e frete.`;
     
-    // Codificar mensagem para URL
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
     
-    // Abrir em nova aba
     window.open(url, '_blank');
 }
 
-/* ==========================================
-   SCROLL SUAVE E ANIMAÇÕES
-   ========================================== */
+
 const scrollAnimations = () => {
-    // Mudar cor da navbar ao scrollar
     const navbar = document.querySelector('.navbar');
     
     window.addEventListener('scroll', () => {
@@ -56,10 +43,7 @@ const scrollAnimations = () => {
     });
 }
 
-/* ==========================================
-   INICIALIZAÇÃO
-   ========================================== */
-// Chamar todas as funções quando a página carregar
+
 document.addEventListener('DOMContentLoaded', () => {
     navSlide();
     scrollAnimations();
@@ -68,10 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('%cSite oficial carregado com sucesso!', 'color: #fff;');
 });
 
-/* ==========================================
-   EFEITO PARALLAX (OPCIONAL)
-   ========================================== */
-// Adiciona efeito de profundidade ao scroll
+
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const parallax = document.querySelector('.hero::before');
