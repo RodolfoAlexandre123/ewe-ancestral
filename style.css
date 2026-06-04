@@ -419,9 +419,14 @@ section {
 
 .product-image img {
     width: 100%;
-    max-width: 250px;
+    max-width: 400px;          /* Largura maior */
+    height: auto;              /* Altura automática */
+    object-fit: contain;       /* Não estica */
     border-radius: 10px;
     margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .product-name {
