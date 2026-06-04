@@ -1,6 +1,4 @@
-/* ==========================================
-   RESET E VARIÁVEIS GLOBAIS
-   ========================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,16 +6,16 @@
 }
 
 :root {
-    --cor-primaria: #8B0000;    /* Vermelho sangue */
-    --cor-secundaria: #ffffff;  /* Branco */
-    --cor-fundo: #0a0a0a;       /* Preto quase absoluto */
-    --cor-cinza: #1a1a1a;       /* Cinza escuro */
+    --cor-primaria: #8B0000;    
+    --cor-secundaria: #ffffff;  
+    --cor-fundo: #0a0a0a;       
+    --cor-cinza: #1a1a1a;       
     --fonte-titulo: 'Metal Mania', cursive;
     --fonte-texto: 'Roboto', sans-serif;
 }
 
 html {
-    scroll-behavior: smooth; /* Rolagem suave ao clicar nos links */
+    scroll-behavior: smooth; 
 }
 
 body {
@@ -28,9 +26,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ==========================================
-   BARRA DE NAVEGAÇÃO
-   ========================================== */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -46,9 +42,9 @@ body {
 }
 
 .logo-img {
-    height: auto;        /* Altura automática */
-    width: 120px;        /* Largura fixa - AUMENTE esse valor */
-    max-height: 100px;   /* Limite de altura pra não ficar gigante */
+    height: auto;        
+    width: 120px;        
+    max-height: 100px;   
 }
 
 .nav-links {
@@ -86,7 +82,7 @@ body {
     width: 100%;
 }
 
-/* Menu Mobile (Hamburguer) */
+
 .burger {
     display: none;
     flex-direction: column;
@@ -101,9 +97,7 @@ body {
     transition: all 0.3s;
 }
 
-/* ==========================================
-   SEÇÃO HERO (HOME)
-   ========================================== */
+
 .hero {
     height: 100vh;
     display: flex;
@@ -155,7 +149,7 @@ body {
     justify-content: center;
 }
 
-/* BOTÕES */
+
 .btn {
     padding: 15px 30px;
     border: 2px solid var(--cor-primaria);
@@ -190,7 +184,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* Scroll Indicator */
+
 .scroll-indicator {
     position: absolute;
     bottom: 30px;
@@ -239,9 +233,7 @@ body {
     100% { opacity: 0; top: 20px; }
 }
 
-/* ==========================================
-   SEÇÕES GERAIS
-   ========================================== */
+
 section {
     padding: 80px 5%;
 }
@@ -259,9 +251,7 @@ section {
     margin-right: 15px;
 }
 
-/* ==========================================
-   SEÇÃO MÚSICAS
-   ========================================== */
+
 .music-section {
     background-color: var(--cor-cinza);
 }
@@ -315,9 +305,9 @@ section {
 
 .album-art img {
     width: 100%;
-    max-width: 500px;          /* Aumentei a largura máxima */
-    max-height: 300px;         /* Limitei a altura */
-    object-fit: cover;         /* Corta as bordas pra manter proporção */
+    max-width: 500px;          
+    max-height: 300px;         
+    object-fit: cover;         
     border-radius: 10px;
     display: block;
     margin: 0 auto 20px;
@@ -359,9 +349,7 @@ section {
     transform: scale(1.05);
 }
 
-/* ==========================================
-   SEÇÃO MERCH
-   ========================================== */
+
 .merch-section {
     background-color: var(--cor-fundo);
 }
@@ -419,9 +407,9 @@ section {
 
 .product-image img {
     width: 100%;
-    max-width: 400px;          /* Largura maior */
-    height: auto;              /* Altura automática */
-    object-fit: contain;       /* Não estica */
+    max-width: 400px;          
+    height: auto;              
+    object-fit: contain;       
     border-radius: 10px;
     margin-bottom: 15px;
     display: block;
@@ -441,7 +429,7 @@ section {
     margin-bottom: 15px;
 }
 
-/* Tabela de Medidas */
+
 .size-table {
     margin: 15px 0;
     overflow-x: auto;
@@ -476,7 +464,7 @@ section {
     font-style: italic;
 }
 
-/* Preços */
+
 .product-prices {
     margin: 15px 0;
     padding: 15px;
@@ -507,7 +495,7 @@ section {
     font-size: 1rem !important;
 }
 
-/* Botão de Compra */
+
 .btn-buy {
     width: 100%;
     padding: 12px;
@@ -540,9 +528,7 @@ section {
     border-radius: 5px;
 }
 
-/* ==========================================
-   SEÇÃO CONTATO
-   ========================================== */
+
 .contact-section {
     background-color: var(--cor-cinza);
     text-align: center;
@@ -633,9 +619,7 @@ section {
     color: var(--cor-primaria);
 }
 
-/* ==========================================
-   FOOTER
-   ========================================== */
+
 .footer {
     background-color: #000;
     padding: 40px 20px;
@@ -661,9 +645,7 @@ section {
     margin-top: 15px;
 }
 
-/* ==========================================
-   WHATSAPP FLUTUANTE
-   ========================================== */
+
 .whatsapp-float {
     position: fixed;
     bottom: 30px;
@@ -693,9 +675,7 @@ section {
     50% { box-shadow: 0 5px 30px rgba(37, 211, 102, 0.8); }
 }
 
-/* ==========================================
-   RESPONSIVIDADE (MOBILE)
-   ========================================== */
+
 @media screen and (max-width: 768px) {
     .nav-links {
         position: absolute;
@@ -758,7 +738,7 @@ section {
     }
 }
 
-/* Toggle do menu mobile */
+
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -771,9 +751,7 @@ section {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* ==========================================
-   CAIXA "EM BREVE" (COMING SOON)
-   ========================================== */
+
 .coming-soon-box {
     background: linear-gradient(135deg, #1a0000 0%, #0a0a0a 100%);
     border: 2px dashed var(--cor-primaria);
@@ -815,23 +793,22 @@ section {
     margin-top: 10px;
 }
 
-/* ==========================================
-   RESPONSIVIDADE - MOBILE
-   ========================================== */
+
+
 
 @media screen and (max-width: 768px) {
-    /* Ajustar logo */
+    
     .logo-img {
         height: 50px;
         width: auto;
     }
     
-    /* Ajustar navbar */
+    
     .navbar {
         padding: 0.8rem 3%;
     }
     
-    /* Menu hamburguer */
+    
     .nav-links {
         position: absolute;
         right: 0px;
@@ -856,7 +833,6 @@ section {
         display: flex;
     }
     
-    /* Hero - título menor */
     .hero h1 {
         font-size: 2.5rem;
     }
@@ -876,7 +852,7 @@ section {
         font-size: 0.9rem;
     }
     
-    /* Seções */
+    
     section {
         padding: 40px 3%;
     }
@@ -889,7 +865,6 @@ section {
         font-size: 1.5rem;
     }
     
-    /* Álbuns */
     .album-art img {
         max-width: 100%;
         max-height: 250px;
@@ -899,7 +874,6 @@ section {
         padding: 15px;
     }
     
-    /* Produtos */
     .product-image img {
         max-width: 100%;
         max-height: 250px;
@@ -909,7 +883,6 @@ section {
         padding: 15px;
     }
     
-    /* Tabela de medidas - scroll horizontal */
     .size-table {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
@@ -925,18 +898,15 @@ section {
         padding: 6px 4px;
     }
     
-    /* Preços menores */
     .price span {
         font-size: 1.1rem;
     }
     
-    /* Botões menores */
     .btn-buy {
         padding: 10px;
         font-size: 0.9rem;
     }
     
-    /* Redes sociais */
     .social-links {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -950,12 +920,10 @@ section {
         font-size: 2.5rem;
     }
     
-    /* Footer */
     .footer-logo {
         height: 60px;
     }
     
-    /* WhatsApp flutuante menor */
     .whatsapp-float {
         width: 50px;
         height: 50px;
@@ -965,7 +933,6 @@ section {
     }
 }
 
-/* Tablets */
 @media screen and (max-width: 1024px) and (min-width: 769px) {
     .albums-container {
         grid-template-columns: 1fr;
@@ -976,7 +943,6 @@ section {
     }
 }
 
-/* Ajustes extras pra tela muito pequena */
 @media screen and (max-width: 480px) {
     .hero h1 {
         font-size: 2rem;
